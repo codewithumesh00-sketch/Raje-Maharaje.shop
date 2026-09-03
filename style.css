@@ -2482,3 +2482,248 @@ button {
     display: none;
   }
 }
+
+/* ==========================================================================
+   15. COMING SOON PAGE STYLING
+   ========================================================================== */
+.coming-soon-body {
+  background: radial-gradient(circle at 50% 20%, #20172D 0%, #120D1A 65%, #0B0711 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+
+.coming-soon-header {
+  position: relative;
+  background: rgba(18, 13, 26, 0.95);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.coming-soon-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  position: relative;
+}
+
+.coming-soon-card {
+  max-width: 680px;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 4px;
+  padding: 56px 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), inset 0 0 40px rgba(212, 175, 55, 0.05);
+  position: relative;
+}
+
+.coming-soon-crest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.coming-soon-crest-line {
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D4AF37);
+}
+
+.coming-soon-crest-line.right {
+  background: linear-gradient(90deg, #D4AF37, transparent);
+}
+
+.coming-soon-star {
+  width: 20px;
+  height: 20px;
+  fill: #D4AF37;
+}
+
+.coming-soon-tag {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #D4AF37;
+  margin-bottom: 12px;
+}
+
+.coming-soon-title {
+  font-family: 'Cinzel', 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: 6px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+}
+
+.coming-soon-desc {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 520px;
+  margin: 0 auto 36px;
+}
+
+.coming-soon-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.coming-soon-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  background-color: #D4AF37;
+  color: #120D1A;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
+}
+
+.coming-soon-btn-primary:hover {
+  background-color: #F3E5AB;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.45);
+}
+
+.coming-soon-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 28px;
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+
+.coming-soon-btn-secondary:hover {
+  border-color: #25D366;
+  color: #25D366;
+  transform: translateY(-2px);
+}
+
+.coming-soon-vip-box {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 30px;
+}
+
+.coming-soon-vip-title {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 12px;
+}
+
+.coming-soon-form {
+  display: flex;
+  max-width: 440px;
+  margin: 0 auto;
+  gap: 8px;
+}
+
+.coming-soon-input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  padding: 12px 16px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: #FFFFFF;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.coming-soon-input:focus {
+  border-color: #D4AF37;
+}
+
+.coming-soon-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.coming-soon-submit {
+  background: #D4AF37;
+  color: #120D1A;
+  border: none;
+  border-radius: 2px;
+  padding: 12px 20px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.coming-soon-submit:hover {
+  background: #F3E5AB;
+}
+
+.coming-soon-footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+@media screen and (max-width: 600px) {
+  .coming-soon-card {
+    padding: 36px 20px;
+  }
+  .coming-soon-title {
+    font-size: 34px;
+    letter-spacing: 3.5px;
+  }
+  .coming-soon-desc {
+    font-size: 13.5px;
+    margin-bottom: 28px;
+  }
+  .coming-soon-form {
+    flex-direction: column;
+  }
+  .coming-soon-submit {
+    width: 100%;
+    padding: 13px;
+  }
+}
+
