@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raje Maharaje | Bespoke Luxury Menswear & Gifting</title>
+  <meta name="description" content="Rooted in regal heritage and modern craftsmanship, Raje Maharaje curates bespoke menswear, wedding favors, and corporate gifts.">
+  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>R</text></svg>">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. TOP ANNOUNCEMENT BAR
+       ========================================================================= -->
+  <div class="announcement-bar" id="announcementBar">
+    <a href="#weddingFavors" data-url="https://www.rajemaharaje.com/collections/wedding-favors">
+      <span class="announcement-text-desktop">WEDDING FAVORS &amp; CORPORATE GIFTS: BESPOKE LUXURY DELIVERIES</span>
+      <span class="announcement-text-mobile">NEW IN: RAJE MAHARAJE - FIRST EVENING EDIT</span>
+    </a>
+  </div>
+
+  <!-- =========================================================================
+       2. MAIN SITE HEADER
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      
+      <!-- Left: Hamburger & Logo & Nav -->
+      <div class="header-left-group">
+        <button class="hamburger-btn" id="drawerOpenBtn" aria-label="Open Navigation">
+          <svg fill="none" height="19" viewBox="0 0 24 19" width="24" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <rect fill="white" height="1.5" width="20" x="2" y="2"></rect>
+              <rect fill="white" height="1.5" width="20" x="2" y="9"></rect>
+              <rect fill="white" height="1.5" width="20" x="2" y="16"></rect>
+            </g>
+          </svg>
+        </button>
+
+        <a href="#heroCampaign" class="brand-logo" aria-label="Raje Maharaje Homepage" data-url="https://www.rajemaharaje.com/">
+          <span class="brand-logo-text brand-full">RAJE MAHARAJE</span>
+          <span class="brand-logo-text brand-short">R&amp;J</span>
+        </a>
+
+        <nav class="header-nav">
+          <ul class="nav-menu">
+            <li><a href="#heroCampaign" class="nav-link" data-url="https://www.rajemaharaje.com/">HOME</a></li>
+            <li><a href="#curatedStyles" class="nav-link" data-url="https://www.rajemaharaje.com/collections/shop">SHOP</a></li>
+            <li><a href="#weddingFavors" class="nav-link" data-url="https://www.rajemaharaje.com/collections/wedding-favors">WEDDING FAVORS</a></li>
+            <li><a href="#corporateGifts" class="nav-link" data-url="https://www.rajemaharaje.com/collections/corporate-gifts">CORPORATE GIFTS</a></li>
+            <li><a href="#stylingSeries" class="nav-link" data-url="https://www.rajemaharaje.com/pages/about-us">ABOUT US</a></li>
+            <li><a href="#siteFooter" class="nav-link" data-url="https://www.rajemaharaje.com/pages/contact-us">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Right: Utility Icons -->
+      <div class="header-right-group">
+        <div class="country-pill" id="countrySelectorBtn">
+          <svg fill="none" height="26" viewBox="0 0 26 26" width="26" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" d="M12.5305 4C17.2382 4 21.061 7.82229 21.061 12.5309C21.061 17.2387 17.2382 21.061 12.5305 21.061C7.82284 21.061 4 17.2387 4 12.5309C4 7.82229 7.82284 4 12.5305 4ZM13.4609 5.20247C13.1563 5.16412 12.8459 5.14387 12.5305 5.14387C8.45372 5.14387 5.14452 8.45391 5.14452 12.5309C5.14452 12.5345 5.14452 12.5381 5.14452 12.5424C5.65095 12.6293 6.17549 12.7002 6.6718 12.6032C7.05958 12.5273 7.49512 12.3377 7.9198 12.2842C8.32639 12.2328 8.7243 12.2834 9.09399 12.5186C9.58524 12.8319 9.70605 13.3094 9.6612 13.8701C9.64456 14.0748 9.60476 14.2926 9.58306 14.5061C9.56642 14.6681 9.53315 14.8316 9.63155 14.9553C9.73934 15.0914 9.90936 15.116 10.0743 15.1413C10.2725 15.171 10.4766 15.1796 10.6639 15.1999C11.2521 15.2621 11.8779 15.5211 12.3243 15.9104C12.872 16.3864 13.0102 16.9703 13.0688 17.5831C13.1049 17.968 13.0825 18.3689 13.296 18.7118C13.4631 18.9802 13.7525 19.0909 14.0549 19.1727C14.4506 19.2797 14.8782 19.3253 15.2508 19.3991C17.9826 18.3153 19.9165 15.647 19.9165 12.5309C19.9165 12.146 19.8876 11.7683 19.8304 11.3993C18.5108 11.6243 17.2649 11.1975 15.9504 11.018C15.6284 10.9746 15.2298 10.997 14.8731 10.9283C14.5215 10.8603 14.2039 10.7178 13.9587 10.4559C13.657 10.1339 13.662 9.65638 13.7134 9.26279C13.751 8.97773 13.7966 8.62827 13.7337 8.34177C13.7105 8.32151 13.6555 8.27159 13.6222 8.24482C13.5477 8.18405 13.4754 8.12182 13.4124 8.05454C13.1295 7.75066 13.0051 7.38746 12.9798 6.97868C12.9523 6.52287 12.9892 6.00846 13.2106 5.6004C13.2808 5.47089 13.3719 5.33849 13.4609 5.20247ZM19.5685 10.2844C18.8291 7.96844 16.977 6.14665 14.6416 5.45064C14.6337 5.46583 14.6257 5.48174 14.6178 5.49694C14.4991 5.72484 14.3283 5.939 14.2162 6.14592C14.0939 6.37021 14.1063 6.65817 14.1222 6.9085C14.1301 7.04524 14.1555 7.1733 14.2502 7.27459C14.337 7.36865 14.455 7.44245 14.5468 7.53578C14.6814 7.67252 14.7841 7.83097 14.8341 8.02632C14.9426 8.45029 14.9035 8.98135 14.8478 9.41039C14.8377 9.4907 14.8276 9.64842 14.8239 9.70341C14.9303 9.79312 15.0772 9.80832 15.2218 9.82496C15.5235 9.85896 15.8404 9.84883 16.1052 9.88501C16.8063 9.98051 17.4856 10.1585 18.1693 10.2591C18.6309 10.3271 19.0939 10.3589 19.5685 10.2844ZM5.23787 13.7102C5.80363 17.2272 8.85525 19.9172 12.5305 19.9172C12.6549 19.9172 12.7794 19.9143 12.9024 19.9085C12.6752 19.7565 12.4777 19.5634 12.3243 19.3159C12.066 18.9006 11.9937 18.4383 11.9539 17.9702C11.917 17.5455 11.951 17.1013 11.5734 16.7728C11.2963 16.5319 10.907 16.3756 10.5431 16.3372C10.279 16.309 9.98604 16.2967 9.71474 16.2381C9.33347 16.1549 8.99054 15.9871 8.73588 15.6673C8.42767 15.2788 8.39512 14.7832 8.45806 14.2738C8.48193 14.0792 8.5181 13.8838 8.52533 13.703C8.52823 13.619 8.555 13.5315 8.47976 13.4837C8.30179 13.3709 8.10284 13.4041 7.90677 13.4468C7.55806 13.5228 7.20861 13.6639 6.89172 13.7261C6.3549 13.831 5.78988 13.7883 5.23787 13.7102ZM16.7686 16.3351C16.5393 16.4791 16.1978 16.6201 15.8643 16.6679C15.5858 16.7084 15.313 16.6831 15.0887 16.5861C14.7444 16.4371 14.5845 16.1839 14.515 15.8793C14.4904 15.7678 14.4803 15.6477 14.4745 15.5269C14.4716 15.4488 14.4795 15.3699 14.4593 15.3034C14.4238 15.1898 14.3406 15.1037 14.2726 15.0082C14.1764 14.8743 14.0882 14.7354 14.0267 14.582C13.9131 14.2977 13.9102 13.9055 14.0187 13.5416C14.1272 13.1791 14.3414 12.8565 14.5794 12.6835C16.124 11.5672 17.8408 12.3666 18.2018 13.5966C18.4348 14.3881 18.1686 15.4575 16.7686 16.3351ZM15.6248 15.5493C15.674 15.5472 15.7276 15.5334 15.7804 15.5211C15.9229 15.4878 16.0625 15.4278 16.1609 15.3663C16.9437 14.8758 17.2346 14.3613 17.1043 13.9193C16.9227 13.3 16.0271 13.0489 15.2501 13.6111C15.1821 13.6595 15.1459 13.7652 15.1155 13.8679C15.0851 13.9699 15.0569 14.0777 15.0887 14.1566C15.1394 14.2832 15.2349 14.3838 15.3116 14.4945C15.4121 14.6399 15.4982 14.7933 15.5517 14.9655C15.5937 15.1 15.6089 15.2556 15.6154 15.4148C15.6169 15.4517 15.6205 15.5045 15.6248 15.5493Z" fill="white" fill-rule="evenodd"></path>
+          </svg>
+          <span>India</span>
+        </div>
+
+        <button class="header-icon" id="searchOpenBtn" aria-label="Search">
+          <svg fill="none" height="19" viewBox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" d="M13.7163 7.58766C13.7163 10.5582 11.3082 12.9663 8.33766 12.9663C5.3671 12.9663 2.95898 10.5582 2.95898 7.58766C2.95898 4.6171 5.3671 2.20898 8.33766 2.20898C11.3082 2.20898 13.7163 4.6171 13.7163 7.58766ZM12.8481 12.0981C11.6938 13.2524 10.0991 13.9663 8.33766 13.9663C4.81481 13.9663 1.95898 11.1105 1.95898 7.58766C1.95898 4.06481 4.81481 1.20898 8.33766 1.20898C11.8605 1.20898 14.7163 4.06481 14.7163 7.58766C14.7163 9.2983 14.0429 10.8517 12.9468 11.9971L13.5499 11.3857L18.5971 16.3647L17.8948 17.0766L12.8481 12.0981Z" fill="white" fill-rule="evenodd"></path>
+          </svg>
+        </button>
+
+        <button class="header-icon" id="accountBtn" aria-label="Account">
+          <svg fill="none" height="20" viewBox="0 0 19 20" width="19" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" d="M5.59668 6.20703C5.59668 4.31842 7.29887 2.70703 9.50268 2.70703C11.7065 2.70703 13.4087 4.31842 13.4087 6.20703C13.4087 8.09564 11.7065 9.70703 9.50268 9.70703C7.29887 9.70703 5.59668 8.09564 5.59668 6.20703ZM9.50268 1.70703C6.83975 1.70703 4.59668 3.67736 4.59668 6.20703C4.59668 8.43908 6.34299 10.2357 8.58318 10.6275C4.67064 11.0587 1.59668 14.2074 1.59668 18.0771C1.59668 18.3533 1.82054 18.5771 2.09668 18.5771H16.9087C17.1848 18.5771 17.4087 18.3533 17.4087 18.0771C17.4087 14.2074 14.3347 11.0587 10.4222 10.6275C12.6624 10.2357 14.4087 8.43907 14.4087 6.20703C14.4087 3.67736 12.1656 1.70703 9.50268 1.70703ZM9.50268 11.5771C13.1625 11.5771 16.1177 14.243 16.3884 17.5771H2.61691C2.88764 14.243 5.84289 11.5771 9.50268 11.5771Z" fill="white" fill-rule="evenodd"></path>
+          </svg>
+        </button>
+
+        <button class="header-icon" id="cartOpenBtn" aria-label="Cart">
+          <svg fill="none" height="20" viewBox="0 0 21 20" width="21" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" d="M10.2048 1.70703C8.17708 1.70703 6.53442 3.35065 6.53442 5.3775V6.63916H1.90918C1.63304 6.63916 1.40918 6.86302 1.40918 7.13916V18.0772C1.40918 18.3534 1.63304 18.5772 1.90918 18.5772H18.5005C18.7766 18.5772 19.0005 18.3534 19.0005 18.0772V7.13916C19.0005 6.86302 18.7766 6.63916 18.5005 6.63916H13.8753V5.3775C13.8753 3.3505 12.231 1.70703 10.2048 1.70703ZM7.53442 5.3775C7.53442 3.90276 8.72954 2.70703 10.2048 2.70703C11.6789 2.70703 12.8753 3.90292 12.8753 5.3775V6.63885H7.53442V5.3775ZM2.40918 17.5772V7.63916H18.0005V17.5772H2.40918Z" fill="white" fill-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+  
+  <!-- Mobile Subnav Category Bar (Image 1 replica) -->
+  <nav class="mobile-subnav" id="mobileSubNav" aria-label="Quick Categories">
+    <a href="#heroCampaign" class="mobile-subnav-link">HOME</a>
+    <a href="#curatedStyles" class="mobile-subnav-link">SHOP</a>
+    <a href="#splitBanner1" class="mobile-subnav-link">MEN</a>
+    <a href="#weddingFavors" class="mobile-subnav-link">GIFTING</a>
+  </nav>
+
+  <!-- =========================================================================
+       SIDE NAVIGATION DRAWER (FOR MOBILE & HAMBURGER)
+       ========================================================================= -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="side-drawer" id="sideDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-brand">RAJE MAHARAJE</span>
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close Navigation">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer-content">
+      <ul class="drawer-nav-menu">
+        <li><a href="#heroCampaign" class="drawer-nav-link" data-url="https://www.rajemaharaje.com/">HOME</a></li>
+        <li><a href="#curatedStyles" class="drawer-nav-link" data-url="https://www.rajemaharaje.com/collections/shop">SHOP</a></li>
+        <li><a href="#weddingFavors" class="drawer-nav-link" data-url="https://www.rajemaharaje.com/collections/wedding-favors">WEDDING FAVORS</a></li>
+        <li><a href="#corporateGifts" class="drawer-nav-link" data-url="https://www.rajemaharaje.com/collections/corporate-gifts">CORPORATE GIFTS</a></li>
+        <li><a href="#stylingSeries" class="drawer-nav-link" data-url="https://www.rajemaharaje.com/pages/about-us">ABOUT US</a></li>
+        <li><a href="#siteFooter" class="drawer-nav-link" data-url="https://www.rajemaharaje.com/pages/contact-us">CONTACT US</a></li>
+      </ul>
+
+      <div class="drawer-footer">
+        <div class="drawer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+918588000150">+91 8588000150</a>
+        </div>
+        <div class="drawer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+          <a href="https://wa.me/+918588000150" target="_blank">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       3. HERO CAMPAIGN SECTION (DEEP CHARCOAL-PLUM #120D1A & VIDEO)
+       ========================================================================= -->
+  <section class="hero-campaign" id="heroCampaign">
+    <!-- Desktop Video Experience -->
+    <div class="hero-desktop-wrapper">
+      <div class="hero-video-container">
+        <video id="heroVideo" class="hero-video" autoplay loop muted playsinline poster="assets/hero_poster.jpg?v=3">
+          <source src="assets/hero_palace.mp4?v=3" type="video/mp4">
+        </video>
+
+        <!-- Bottom Action Links: NEW ARRIVALS | DISCOVER RAJE MAHARAJE -->
+        <div class="hero-bottom-actions">
+          <a href="#curatedStyles" class="hero-cta" data-url="https://www.rajemaharaje.com/collections/shop">NEW ARRIVALS</a>
+          <span class="cta-separator">|</span>
+          <a href="#stylingSeries" class="hero-cta" data-url="https://www.rajemaharaje.com/pages/about-us">DISCOVER RAJE MAHARAJE</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Responsive Editorial Experience (Image 1 High-Fashion Replica) -->
+    <div class="hero-mobile-editorial" id="heroMobileEditorial">
+      <div class="hero-editorial-top">
+        <h1 class="hero-editorial-title hero-title-raje">RAJE</h1>
+      </div>
+
+      <div class="hero-editorial-media">
+        <video id="heroMobileVideo" class="hero-editorial-video" autoplay loop muted playsinline poster="assets/hero_poster.jpg?v=3">
+          <source src="assets/hero_palace.mp4?v=3" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero-editorial-bottom">
+        <h2 class="hero-editorial-title hero-title-maharaje">MAHARAJE</h2>
+
+        <!-- 8-Point Sparkling Luxury Star Motif (As per Image 1) -->
+        <svg class="hero-sparkle-star" viewBox="0 0 24 24" fill="#D5DDE5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 0L13.8 8.2L22 12L13.8 15.8L12 24L10.2 15.8L2 12L10.2 8.2L12 0Z"/>
+        </svg>
+
+        <div class="hero-bottom-actions hero-mobile-actions">
+          <a href="#curatedStyles" class="hero-cta" data-url="https://www.rajemaharaje.com/collections/shop">NEW ARRIVALS</a>
+          <span class="cta-separator">|</span>
+          <a href="#stylingSeries" class="hero-cta" data-url="https://www.rajemaharaje.com/pages/about-us">DISCOVER RAJE MAHARAJE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. SPLIT EDITORIAL BANNERS (AS PER 3RD & 4TH IMAGES)
+       ========================================================================= -->
+  <!-- Section 1: Image 1 on Left, Text on Right (Royal Red Evening Section) -->
+  <section class="split-banner-section split-banner-royal-red" id="splitBanner1">
+    <div class="split-banner-row">
+      <div class="split-media-col">
+        <a href="https://www.rajemaharaje.com/collections/all-men" data-url="https://www.rajemaharaje.com/collections/all-men">
+          <img src="assets/men_royal_red.jpg" alt="Where The Evening Begins - Royal Red Edition" class="split-image" loading="lazy">
+        </a>
+      </div>
+      <div class="split-content-col">
+        <h2 class="split-title">WHERE THE<br>EVENING BEGINS</h2>
+        <svg class="split-star" viewBox="0 0 24 24" fill="#F0EAD9" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 0L13.8 8.2L22 12L13.8 15.8L12 24L10.2 15.8L2 12L10.2 8.2L12 0Z"/>
+        </svg>
+        <a href="https://www.rajemaharaje.com/collections/all-men" class="split-cta" data-url="https://www.rajemaharaje.com/collections/all-men">
+          SHOP MEN
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Text on Left, Image 2 on Right (Royal Red Edition) -->
+  <section class="split-banner-section split-banner-royal-red" id="splitBanner2">
+    <div class="split-banner-row split-reverse">
+      <div class="split-content-col">
+        <h2 class="split-title">FOR THE MAN<br>OF THE HOUR</h2>
+        <svg class="split-star" viewBox="0 0 24 24" fill="#F0EAD9" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 0L13.8 8.2L22 12L13.8 15.8L12 24L10.2 15.8L2 12L10.2 8.2L12 0Z"/>
+        </svg>
+        <a href="https://www.rajemaharaje.com/collections/all-men" class="split-cta" data-url="https://www.rajemaharaje.com/collections/all-men">
+          SHOP MEN
+        </a>
+      </div>
+      <div class="split-media-col">
+        <a href="https://www.rajemaharaje.com/collections/all-men" data-url="https://www.rajemaharaje.com/collections/all-men">
+          <img src="assets/men_beige_bandhgala_red.jpg" alt="For The Man Of The Hour - Royal Red Edition" class="split-image" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. FEATURED CURATED STYLES
+       ========================================================================= -->
+  <section class="curated-products" id="curatedStyles">
+    <div class="curated-products-inner">
+      <p class="section-label">THE EVENING EDIT</p>
+      <h3 class="section-title">
+        <svg class="section-title-star" viewBox="0 0 24 24" fill="#F0EAD9" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 0L13.8 8.2L22 12L13.8 15.8L12 24L10.2 15.8L2 12L10.2 8.2L12 0Z"/>
+          <path d="M12 4.5L13.3 9.8L18.6 12L13.3 14.2L12 19.5L10.7 14.2L5.4 12L10.7 9.8L12 4.5Z" transform="rotate(45 12 12)" opacity="0.8"/>
+        </svg>
+        FEATURED STYLES
+        <svg class="section-title-star" viewBox="0 0 24 24" fill="#F0EAD9" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 0L13.8 8.2L22 12L13.8 15.8L12 24L10.2 15.8L2 12L10.2 8.2L12 0Z"/>
+          <path d="M12 4.5L13.3 9.8L18.6 12L13.3 14.2L12 19.5L10.7 14.2L5.4 12L10.7 9.8L12 4.5Z" transform="rotate(45 12 12)" opacity="0.8"/>
+        </svg>
+      </h3>
+
+      <div class="products-grid">
+        <div class="product-item" data-url="https://www.rajemaharaje.com/products/noir-zardozi-bandhgala">
+          <div class="product-image-box">
+            <img src="assets/featured_style_1_black.jpg" alt="Royal Zardozi Charcoal Bandhgala" loading="lazy">
+          </div>
+          <div class="product-meta">
+            <h4>Royal Zardozi Charcoal Bandhgala</h4>
+            <p>₹ 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-item" data-url="https://www.rajemaharaje.com/products/midnight-sapphire-bandhgala">
+          <div class="product-image-box">
+            <img src="assets/featured_style_2_navy.jpg" alt="Midnight Sapphire Silk Bandhgala" loading="lazy">
+          </div>
+          <div class="product-meta">
+            <h4>Midnight Sapphire Silk Bandhgala</h4>
+            <p>₹ 15,200</p>
+          </div>
+        </div>
+
+        <div class="product-item" data-url="https://www.rajemaharaje.com/products/imperial-burgundy-sherwani">
+          <div class="product-image-box">
+            <img src="assets/featured_style_3_maroon.jpg" alt="Imperial Burgundy Zari Sherwani" loading="lazy">
+          </div>
+          <div class="product-meta">
+            <h4>Imperial Burgundy Zari Sherwani</h4>
+            <p>₹ 24,500</p>
+          </div>
+        </div>
+
+        <div class="product-item" data-url="https://www.rajemaharaje.com/products/ivory-heritage-bandhgala">
+          <div class="product-image-box">
+            <img src="assets/featured_style_4_beige.jpg" alt="Ivory Heritage Silk Bandhgala" loading="lazy">
+          </div>
+          <div class="product-meta">
+            <h4>Ivory Heritage Silk Bandhgala</h4>
+            <p>₹ 14,800</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="curated-bottom-actions">
+        <a href="https://www.rajemaharaje.com/collections/shop" class="curated-action-link" data-url="https://www.rajemaharaje.com/collections/shop">SHOP MEN</a>
+        <a href="https://www.rajemaharaje.com/collections/shop" class="curated-action-link" data-url="https://www.rajemaharaje.com/collections/shop">SHOP ACCESSORIES</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. WELCOME TO OUR GIFTING WORLD
+       ========================================================================= -->
+  <section class="gifting-world-section" id="giftingWorld">
+    <div id="weddingFavors"></div>
+    <div class="gifting-world-inner">
+      <h3 class="gifting-world-title">WELCOME TO OUR GIFTING WORLD</h3>
+
+      <div class="gifting-grid">
+        <div class="gifting-card" data-url="https://www.rajemaharaje.com/collections/best-of-gifts">
+          <div class="gifting-image-box">
+            <img src="assets/gifting_1_raje_boxes.jpg" alt="Best of Raje Gifts" loading="lazy">
+          </div>
+          <a href="https://www.rajemaharaje.com/collections/best-of-gifts" class="gifting-card-link" data-url="https://www.rajemaharaje.com/collections/best-of-gifts">
+            BEST OF RAJE GIFTS
+          </a>
+        </div>
+
+        <div class="gifting-card" data-url="https://www.rajemaharaje.com/collections/curated-festive-gifts">
+          <div class="gifting-image-box">
+            <img src="assets/gifting_2_festive_scarf.jpg" alt="Curated Festive Gifts" loading="lazy">
+          </div>
+          <a href="https://www.rajemaharaje.com/collections/curated-festive-gifts" class="gifting-card-link" data-url="https://www.rajemaharaje.com/collections/curated-festive-gifts">
+            CURATED FESTIVE GIFTS
+          </a>
+        </div>
+
+        <div class="gifting-card" id="corporateGifts" data-url="https://www.rajemaharaje.com/collections/corporate-wedding-gifts">
+          <div class="gifting-image-box">
+            <img src="assets/gifting_3_silk_bouquet.jpg" alt="Corporate & Wedding Gifts" loading="lazy">
+          </div>
+          <a href="https://www.rajemaharaje.com/collections/corporate-wedding-gifts" class="gifting-card-link" data-url="https://www.rajemaharaje.com/collections/corporate-wedding-gifts">
+            CORPORATE GIFTS
+          </a>
+        </div>
+
+        <div class="gifting-card" data-url="https://www.rajemaharaje.com/collections/royal-maharaje-boxes">
+          <div class="gifting-image-box">
+            <img src="assets/gifting_4_maharaje_chests.jpg" alt="Royal Maharaje Gift Boxes" loading="lazy">
+          </div>
+          <a href="https://www.rajemaharaje.com/collections/royal-maharaje-boxes" class="gifting-card-link" data-url="https://www.rajemaharaje.com/collections/royal-maharaje-boxes">
+            ROYAL MAHARAJE GIFT BOXES
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. THE GIFTING CONCIERGE BANNER
+       ========================================================================= -->
+  <section class="concierge-banner-section" id="giftingConcierge">
+    <a href="https://www.rajemaharaje.com/pages/the-gifting-concierge" class="concierge-banner-link" data-url="https://www.rajemaharaje.com/pages/the-gifting-concierge" aria-label="The Gifting Concierge - Get in Touch">
+      <picture class="concierge-picture">
+        <source media="(max-width: 650px)" srcset="assets/gifting_concierge_mobile.png">
+        <img src="assets/gifting_concierge_desktop.png" alt="The Gifting Concierge" class="concierge-banner-img" loading="lazy">
+      </picture>
+      <span class="concierge-cta-text">GET IN TOUCH</span>
+    </a>
+  </section>
+
+  <!-- =========================================================================
+       8. THE STYLING SERIES SECTION
+       ========================================================================= -->
+  <section class="styling-series-section" id="stylingSeries">
+    <div class="styling-series-row">
+      <!-- Left Editorial Panel -->
+      <div class="styling-series-col styling-series-editorial">
+        <div class="styling-editorial-media">
+          <img src="assets/styling_series_taupe.png?v=2" alt="The Styling Series" class="styling-left-bg" loading="lazy">
+          <div class="styling-editorial-actions">
+            <a href="https://www.rajemaharaje.com/collections/the-styling-series-x-design-pataki-x-anjali-mody" class="styling-cta-link" data-url="https://www.rajemaharaje.com/collections/the-styling-series-x-design-pataki-x-anjali-mody">SHOP THE EDIT</a>
+            <span class="styling-cta-sep">|</span>
+            <a href="https://www.rajemaharaje.com/pages/the-styling-series-x-anjali-mody" class="styling-cta-link" data-url="https://www.rajemaharaje.com/pages/the-styling-series-x-anjali-mody">DISCOVER MORE</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Feature Image -->
+      <div class="styling-series-col styling-series-photo">
+        <a href="https://www.rajemaharaje.com/pages/the-styling-series-x-anjali-mody" class="styling-photo-link" data-url="https://www.rajemaharaje.com/pages/the-styling-series-x-anjali-mody">
+          <img src="assets/king_owner_clean.jpg" alt="Raje Maharaje Patron Series" class="styling-right-img" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. R&J CORE: ESSENTIALS FOR EVERY SEASON
+       ========================================================================= -->
+  <section class="rj-core-section" id="rjCore">
+    <div class="rj-core-row">
+      <!-- Left: Full Editorial Photo -->
+      <div class="rj-core-media-col">
+        <a href="https://www.rajemaharaje.com/collections/rj-core" data-url="https://www.rajemaharaje.com/collections/rj-core" aria-label="Essentials for Every Season">
+          <img src="assets/rajemaharaje_hero_dress_for_every_part_4k.jpg" alt="Raje Maharaje Essentials for Every Season" class="rj-core-img" loading="lazy">
+        </a>
+      </div>
+
+      <!-- Right: Dark Navy Editorial Content -->
+      <div class="rj-core-content-col">
+        <div class="rj-core-badge-wrap">
+          <img src="assets/rj_core_badge.png" alt="R&J Core Emblem" class="rj-core-badge" loading="lazy">
+        </div>
+        <h2 class="rj-core-title">
+          <span>ESSENTIALS FOR</span>
+          <span>EVERY SEASON</span>
+        </h2>
+        <a href="https://www.rajemaharaje.com/collections/rj-core" class="rj-core-cta" data-url="https://www.rajemaharaje.com/collections/rj-core">
+          SHOP NOW
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. WE MAKE QUITE A TEAM (COMMUNITY GRID)
+       ========================================================================= -->
+  <section class="community-team-section" id="communityTeam">
+    <div class="community-team-row">
+      <!-- Left: 3x2 Curated Image Grid (60% width) -->
+      <div class="community-grid-col">
+        <div class="community-grid-inner">
+          <div class="community-grid-card">
+            <a href="https://www.rajemaharaje.com/collections/pocket-squares" data-url="https://www.rajemaharaje.com/collections/pocket-squares" class="community-card-link" aria-label="Raje Heritage Pocket Squares">
+              <img src="assets/rajemaharaje_card_raje_4k.jpg" alt="Raje Heritage Pocket Squares" class="community-grid-img" loading="lazy">
+            </a>
+          </div>
+          <div class="community-grid-card">
+            <a href="https://www.rajemaharaje.com/collections/barware-gifting" data-url="https://www.rajemaharaje.com/collections/barware-gifting" class="community-card-link" aria-label="Curated Barware & Gifting Boxes">
+              <img src="assets/rajemaharaje_gifting_best_4k.jpg" alt="Curated Barware & Gifting Boxes" class="community-grid-img" loading="lazy">
+            </a>
+          </div>
+          <div class="community-grid-card">
+            <a href="https://www.rajemaharaje.com/collections/royal-velvet-chests" data-url="https://www.rajemaharaje.com/collections/royal-velvet-chests" class="community-card-link" aria-label="Maharaje Velvet Keepsake Chest">
+              <img src="assets/rajemaharaje_card_maharaje_4k.jpg" alt="Maharaje Velvet Keepsake Chest" class="community-grid-img" loading="lazy">
+            </a>
+          </div>
+          <div class="community-grid-card">
+            <a href="https://www.rajemaharaje.com/collections/sartorial-accessories" data-url="https://www.rajemaharaje.com/collections/sartorial-accessories" class="community-card-link" aria-label="Midnight Sartorial Nehru & Peacock Silk">
+              <img src="assets/sartorial_essentials_product_4k.jpg" alt="Midnight Sartorial Nehru & Peacock Silk" class="community-grid-img" loading="lazy">
+            </a>
+          </div>
+          <div class="community-grid-card">
+            <a href="https://www.rajemaharaje.com/collections/bespoke-chests" data-url="https://www.rajemaharaje.com/collections/bespoke-chests" class="community-card-link" aria-label="Maharaje Imperial Gold Embossed Chest">
+              <img src="assets/rajemaharaje_hero_unboxing_4k.jpg" alt="Maharaje Imperial Gold Embossed Chest" class="community-grid-img" loading="lazy">
+            </a>
+          </div>
+          <div class="community-grid-card">
+            <a href="https://www.rajemaharaje.com/collections/silk-scarves" data-url="https://www.rajemaharaje.com/collections/silk-scarves" class="community-card-link" aria-label="Regal Zari Silk Presentation Box">
+              <img src="assets/regal_gift_boxes_1787645456584.jpg" alt="Regal Zari Silk Presentation Box" class="community-grid-img" loading="lazy">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Editorial Content Panel (40% width) -->
+      <div class="community-content-col">
+        <h2 class="community-title">
+          <span>WE MAKE</span>
+          <span>QUITE A TEAM</span>
+        </h2>
+        <a href="https://www.instagram.com/rajemaharaje/" class="community-cta" data-url="https://www.instagram.com/rajemaharaje/" target="_blank" rel="noopener noreferrer">
+          JOIN THE COMMUNITY
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. PRESS & TESTIMONIALS SLIDER (ELLE)
+       ========================================================================= -->
+  <section class="press-slider-section" id="pressSlider">
+    <div class="press-slider-container">
+      <button class="press-nav-btn press-prev-btn" id="pressPrevBtn" aria-label="Previous Press Slide">
+        <svg viewBox="0 0 256 256" width="16" height="16" fill="#111111">
+          <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"/>
+        </svg>
+      </button>
+
+      <div class="press-slides-track" id="pressTrack">
+        <div class="press-slide active" data-slide="0">
+          <a href="https://www.rajemaharaje.com/pages/in-the-press" class="press-slide-link" data-url="https://www.rajemaharaje.com/pages/in-the-press" aria-label="ELLE Press Quote">
+            <picture>
+              <source media="(max-width: 650px)" srcset="assets/frame-30.png">
+              <img src="assets/frame_elle.png" alt="ELLE - R&J Press Quote" class="press-slide-img" loading="lazy">
+            </picture>
+          </a>
+        </div>
+        <div class="press-slide" data-slide="1">
+          <a href="https://www.rajemaharaje.com/pages/in-the-press" class="press-slide-link" data-url="https://www.rajemaharaje.com/pages/in-the-press" aria-label="In The Press">
+            <picture>
+              <source media="(max-width: 650px)" srcset="assets/frame-31.png">
+              <img src="assets/frame_2_press.jpg" alt="R&J In The Press" class="press-slide-img" loading="lazy">
+            </picture>
+          </a>
+        </div>
+      </div>
+
+      <button class="press-nav-btn press-next-btn" id="pressNextBtn" aria-label="Next Press Slide">
+        <svg viewBox="0 0 256 256" width="16" height="16" fill="#111111">
+          <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. SCENT EXPERIENCE & BESPOKE ATELIER
+       ========================================================================= -->
+  <section class="scent-experience-section" id="scentExperience">
+    <img src="assets/mens_suits_rack_bg.jpg" alt="Luxury Menswear Atelier Wardrobe" class="scent-bg-media" loading="lazy">
+    <div class="scent-cards-wrap">
+      <!-- Left Media Card -->
+      <div class="scent-card scent-media-card">
+        <div class="scent-video-box">
+          <video autoplay loop muted playsinline poster="assets/wearing_video_poster.jpg">
+            <source src="assets/generate_with_vedio_by_wearing.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Right Content Card -->
+      <div class="scent-card scent-content-card">
+        <h2 class="scent-title">A PLACE YOU CAN<br>REMEMBER BY SCENT</h2>
+        <img src="assets/scent_leaf_icon.png" alt="Botanical Leaf Emblem" class="scent-leaf-emblem" loading="lazy">
+        <p class="scent-text-p">Walk into our store and you'll find Neroli in the air. It has become a familiar part of stepping into Raje Maharaje.</p>
+        <p class="scent-text-p">There's a personal reason we chose Neroli, as it brings a certain warmth and happiness that's hard to put into words.</p>
+        <p class="scent-quote-text">"It's my mother's favourite scent and it reminds me of being close to the ocean. It's nostalgic and fresh."</p>
+        <div class="scent-author-tag">SIMRAN LAL, CO-FOUNDER, RAJE MAHARAJE</div>
+        <a href="https://bit.ly/4haEzdO" class="scent-store-link" data-url="https://bit.ly/4haEzdO">FIND YOUR NEAREST STORE</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. FOOTER: GET ON THE LIST (NEWSLETTER)
+       ========================================================================= -->
+  <section class="footer-sign-me" id="footerNewsletter">
+    <div class="sign-trees-left">
+      <img src="assets/footer_sun.png" alt="" class="sign-sun" loading="lazy">
+      <img src="assets/footer_tree_big.png" alt="" class="sign-tree-big" loading="lazy">
+      <img src="assets/footer_tree_small.png" alt="" class="sign-tree-small" loading="lazy">
+    </div>
+
+    <div class="sign-me-center">
+      <h2 class="sign-me-title">Get on the list</h2>
+      <p class="sign-me-desc">
+        Perks include <b>10% off</b> your first online order. Be the first to know<br>
+        about new collections, store launches, sales, and much more!
+      </p>
+      <form class="sign-me-form-row" onsubmit="event.preventDefault();">
+        <input type="email" class="sign-me-input" placeholder="Enter your email address here" required>
+        <button type="submit" class="sign-me-btn">SIGN ME UP</button>
+        <img src="assets/footer_monkey.png" alt="" class="sign-monkey-img" loading="lazy">
+      </form>
+    </div>
+
+    <div class="sign-trees-right">
+      <img src="assets/footer_tree_big.png" alt="" class="sign-tree-big" loading="lazy">
+      <img src="assets/footer_tree_small.png" alt="" class="sign-tree-small" loading="lazy">
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. FOOTER: LOVE TICKER BAR
+       ========================================================================= -->
+  <div class="typed-footer-bar" id="footerTicker">
+    <img src="assets/heart_icon.svg" alt="" class="heart-icon" loading="lazy">
+    <span class="ticker-text">100 loves are more important than 10,000 likes.</span>
+    <img src="assets/heart_icon.svg" alt="" class="heart-icon" loading="lazy">
+  </div>
+
+  <!-- =========================================================================
+       13. FOOTER: VALUE PROPOSITIONS (DELIVERY & RETURNS)
+       ========================================================================= -->
+  <section class="delivery-detail-section" id="deliveryDetails">
+    <div class="delivery-grid">
+      <!-- Item 1 -->
+      <div class="delivery-card">
+        <div class="delivery-icon-box">
+          <img src="assets/return.svg" alt="Easy returns" loading="lazy">
+        </div>
+        <div class="delivery-text">
+          <div class="title">Easy returns</div>
+          <div class="desc">Return within 15 days of<br>order delivery. <a href="https://www.rajemaharaje.com/pages/return-and-exchange" target="_blank" data-url="https://www.rajemaharaje.com/pages/return-and-exchange">See T&Cs</a></div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="delivery-card">
+        <div class="delivery-icon-box">
+          <img src="assets/truck.svg" alt="We ship worldwide" loading="lazy">
+        </div>
+        <div class="delivery-text">
+          <div class="title">We ship worldwide</div>
+          <div class="desc">visit <a href="https://global.rajemaharaje.com" target="_blank" data-url="https://global.rajemaharaje.com">global.rajemaharaje.com</a></div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="delivery-card">
+        <div class="delivery-icon-box">
+          <img src="assets/order.svg" alt="Free shipping" loading="lazy">
+        </div>
+        <div class="delivery-text">
+          <div class="title">Free shipping</div>
+          <div class="desc">Free shipping on orders<br>above ₹ 1,000</div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="delivery-card">
+        <div class="delivery-icon-box">
+          <img src="assets/cash.svg" alt="Cash on delivery" loading="lazy">
+        </div>
+        <div class="delivery-text">
+          <div class="title">Cash on delivery</div>
+          <div class="desc">COD available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       14. FOOTER: DIAGONAL STRIPES & DIRECTORY
+       ========================================================================= -->
+  <footer class="footer-diagonal-section" id="siteFooter">
+    <div class="footer-inner-card">
+      <!-- Col 1: Store & Contacts -->
+      <div class="footer-col-find">
+        <a href="https://bit.ly/4wIxzJD" target="_blank" class="find-store-heading" data-url="https://bit.ly/4wIxzJD">
+          <svg width="14" height="17" viewBox="0 0 14 17" fill="none">
+            <path d="M7 0.5C3.4 0.5 0.5 3.4 0.5 7C0.5 11.8 7 16.5 7 16.5C7 16.5 13.5 11.8 13.5 7C13.5 3.4 10.6 0.5 7 0.5Z" stroke="#424954" stroke-width="1.2"/>
+            <circle cx="7" cy="7" r="2.5" stroke="#424954" stroke-width="1.2"/>
+          </svg>
+          <span>FIND A STORE NEAR YOU</span>
+        </a>
+
+        <div class="footer-emails">
+          <a href="mailto:care@rajemaharaje.com">
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="#555" stroke-width="1.2">
+              <rect x="0.6" y="0.6" width="14.8" height="10.8" rx="1"/>
+              <path d="M1 1.5L8 6.5L15 1.5"/>
+            </svg>
+            care@rajemaharaje.com
+          </a>
+          <a href="mailto:corporate@rajemaharaje.com" style="padding-left: 24px;">corporate@rajemaharaje.com</a>
+          <a href="mailto:pr@rajemaharaje.com" style="padding-left: 24px;">pr@rajemaharaje.com</a>
+        </div>
+
+        <div class="footer-phones">
+          <a href="tel:+918588000150">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="1.8">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            +91 8588000150
+          </a>
+          <a href="https://wa.me/+918588000150" target="_blank" data-url="https://wa.me/+918588000150">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+            </svg>
+            <u>CHAT</u>
+          </a>
+        </div>
+        <div class="footer-timings">Mon-Sat 9:30 AM TO 5:30 PM (IST)</div>
+      </div>
+
+      <!-- Col 2: Dragonfly SVG -->
+      <div class="footer-col-dragonfly">
+        <svg class="dragonfly-svg" viewBox="0 0 79.289 46.162" width="60" height="35">
+          <path d="M79.171,1.976c-4.106-4.442-16.941-.8-27.293,5.012A26.118,26.118,0,0,1,40.066,9.96V8.366c.641-.084,1.117-.38,1.117-1.08,0-.843-.682-1.933-1.526-1.933h-.022c-.846,0-1.527,1.09-1.527,1.933,0,.7.476,1,1.114,1.08V9.96A26.116,26.116,0,0,1,27.413,6.988C17.059,1.18,4.222-2.466.121,1.976c-.464.5.473,1.731,1.685,2.731,2.615,2.159,8.149,4.938,13.618,6.752,3.512,1.166,6.931,2.042,8.278,2.482,1.983.644,3.117,1.091,1.476,1.24s-19.81-1.116-19.66,3.277c.062,1.822,4.319,3.94,9.594,5.113,6.4,1.426,14.219,1.664,16.832.846,3.849-1.2,4.171-3.426,6.34-3.426,0,0-.894,25.171,1.342,25.171h.036c2.235,0,1.343-25.171,1.343-25.171,2.171,0,2.493,2.222,6.34,3.426,2.617.818,10.431.58,16.832-.846,5.275-1.173,9.535-3.291,9.6-5.113.149-4.393-18.021-3.128-19.66-3.277s-.51-.6,1.478-1.24c1.344-.44,4.762-1.316,8.279-2.482,5.465-1.814,11-4.593,13.615-6.752,1.209-1,2.144-2.234,1.687-2.731" fill="#1f3c56"/>
+        </svg>
+      </div>
+
+      <!-- Col 3: About us -->
+      <div class="footer-nav-col">
+        <h3>About us</h3>
+        <ul>
+          <li><a href="#stylingSeries" data-url="https://www.rajemaharaje.com/pages/about-us">Our story</a></li>
+          <li><a href="#giftingConcierge" data-url="https://www.rajemaharaje.com/pages/the-gifting-concierge">The Gifting Concierge</a></li>
+          <li><a href="#scentExperience" data-url="https://www.rajemaharaje.com/pages/atelier">Bespoke Atelier</a></li>
+          <li><a href="#siteFooter" data-url="https://www.rajemaharaje.com/pages/contact-us">Contact us</a></li>
+        </ul>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/rajemaharaje/" target="_blank" aria-label="Instagram" data-url="https://www.instagram.com/rajemaharaje/">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/rajemaharaje/" target="_blank" aria-label="LinkedIn" data-url="https://www.linkedin.com/company/rajemaharaje/">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="1.8">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 4: Quick links -->
+      <div class="footer-nav-col">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="#heroCampaign" data-url="https://www.rajemaharaje.com/">Home</a></li>
+          <li><a href="#curatedStyles" data-url="https://www.rajemaharaje.com/collections/shop">Shop</a></li>
+          <li><a href="#weddingFavors" data-url="https://www.rajemaharaje.com/collections/wedding-favors">Wedding Favors</a></li>
+          <li><a href="#corporateGifts" data-url="https://www.rajemaharaje.com/collections/corporate-gifts">Corporate Gifts</a></li>
+          <li><a href="#stylingSeries" data-url="https://www.rajemaharaje.com/pages/about-us">About Us</a></li>
+          <li><a href="#siteFooter" data-url="https://www.rajemaharaje.com/pages/contact-us">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 5: R&J Radio & Copyright -->
+      <div class="footer-col-radio">
+        <div>
+          <a href="https://www.rajemaharaje.com/pages/rj-radio/" class="rjradio-logo-wrap" data-url="https://www.rajemaharaje.com/pages/rj-radio/">
+            <img src="assets/rjradio_logo.svg" alt="R&J Radio" width="140" height="26" loading="lazy">
+          </a>
+          <div class="rjradio-sub">A specially curated musical stream</div>
+        </div>
+        <div class="footer-copyright">
+          Raje Maharaje Pvt. Ltd. All Rights Reserved © 2026
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       15. FLOATING WHATSAPP BUTTON
+       ========================================================================= -->
+  <a href="https://wa.me/+918588000150" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" data-url="https://wa.me/+918588000150">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="#FFFFFF">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+    </svg>
+  </a>
+
+  <!-- =========================================================================
+       8. BROWSER URL TOOLTIP
+       ========================================================================= -->
+  <div class="browser-url-tooltip" id="browserUrlTooltip">https://www.rajemaharaje.com/collections/royal-collection</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

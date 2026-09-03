@@ -1,0 +1,18 @@
+# Scratch & experiment directories
+scratch/
+*.log
+__pycache__/
+*.pyc
+
+# Local OS files
+Thumbs.db
+.DS_Store
+
+# Temporary backups
+*.bak
+assets/*_backup.mp4
+
+# Root development test captures and utility scripts
+/*.png
+/*.jpg
+/*.py

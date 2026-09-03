@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 308" width="308" height="308">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+      .b-top {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        fill: #FFFFFF;
+        font-size: 38px;
+        letter-spacing: 16px;
+      }
+      .b-bot {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        fill: #FFFFFF;
+        font-size: 34px;
+        letter-spacing: 14px;
+      }
+    </style>
+    <path id="topArc" d="M 44,154 A 110,110 0 0,1 264,154" fill="none"/>
+    <path id="bottomArc" d="M 44,154 A 110,110 0 0,0 264,154" fill="none"/>
+  </defs>
+  <circle cx="154" cy="154" r="148" fill="#0C1014"/>
+  <circle cx="154" cy="154" r="146" fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+  <circle cx="154" cy="154" r="70" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-dasharray="5, 4.5"/>
+  <polygon points="154,121 163.5,142 186,143 168,157 174.5,179 154,166 133.5,179 140,157 122,143 144.5,142" fill="#FFFFFF"/>
+  <circle cx="45" cy="154" r="11" fill="#FFFFFF"/>
+  <circle cx="263" cy="154" r="11" fill="#FFFFFF"/>
+  <text class="b-top">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle" dominant-baseline="central">
+      R&amp;J
+    </textPath>
+  </text>
+  <text class="b-bot">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle" dominant-baseline="central">
+      CORE
+    </textPath>
+  </text>
+</svg>
