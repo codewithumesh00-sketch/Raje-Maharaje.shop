@@ -238,6 +238,22 @@ button {
   text-decoration: none;
 }
 
+.brand-crown-icon {
+  display: block;
+  height: 30px;
+  width: auto;
+  max-width: 44px;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.45));
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+}
+
+.brand-logo:hover .brand-crown-icon {
+  transform: scale(1.08);
+  opacity: 0.92;
+}
+
 .brand-logo-text {
   font-family: var(--font-body);
   font-size: 20px;
@@ -580,7 +596,8 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: calc(100vh - 124px);
+  min-height: calc(85vh - 124px);
+  min-height: calc(85dvh - 124px);
   padding: 20px 0 32px;
   background: radial-gradient(ellipse at 50% 36%, var(--color-hero-plum-glow) 0%, var(--color-hero-plum) 65%, var(--color-hero-plum-deep) 100%);
   text-align: center;
@@ -2232,18 +2249,20 @@ button {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .brand-crown-icon {
+    height: 26px;
+    width: auto;
+    max-width: 38px;
   }
   .brand-logo-text.brand-full {
     display: none;
   }
   .brand-logo-text.brand-short {
-    display: inline-block;
-    font-family: 'Cinzel', 'Playfair Display', serif;
-    font-size: 21px;
-    font-weight: 600;
-    letter-spacing: 4px;
-    color: #FFFFFF;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    display: none;
   }
   .country-pill {
     display: none;
@@ -2296,8 +2315,9 @@ button {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    min-height: 100vh;
-    padding: 136px 0 36px;
+    min-height: 85vh;
+    min-height: 85dvh;
+    padding: 124px 0 28px;
   }
 
   .products-grid {
@@ -2381,8 +2401,10 @@ button {
   .header-inner {
     padding: 0 14px;
   }
-  .brand-logo svg {
-    width: 88px;
+  .brand-crown-icon {
+    height: 23px;
+    width: auto;
+    max-width: 34px;
   }
   .country-pill span {
     display: none;
