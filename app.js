@@ -116,19 +116,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 4. Search Modal Handling
   function openSearch() {
-    searchModal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    setTimeout(() => {
-      if (searchInput) searchInput.focus();
-    }, 150);
+    if (searchModal) {
+      searchModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        if (searchInput) searchInput.focus();
+      }, 150);
+    }
   }
 
   function closeSearch() {
-    searchModal.classList.remove('open');
-    document.body.style.overflow = '';
+    if (searchModal) {
+      searchModal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
   }
 
-  if (searchOpenBtn) searchOpenBtn.addEventListener('click', openSearch);
+  if (searchOpenBtn && searchModal) searchOpenBtn.addEventListener('click', openSearch);
   if (searchCloseBtn) searchCloseBtn.addEventListener('click', closeSearch);
   
   // Close modals on Escape key
@@ -139,33 +143,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 5. Cart Button Action
-  let cartCount = 0;
-  if (cartOpenBtn) {
-    cartOpenBtn.addEventListener('click', () => {
-      cartCount++;
-      if (cartCountEl) {
-        cartCountEl.textContent = cartCount;
-        cartCountEl.style.transform = 'scale(1.3)';
-        setTimeout(() => {
-          cartCountEl.style.transform = 'scale(1)';
-        }, 200);
-      }
+  // 5. Product Card Quick-Add & Navigation
+  document.querySelectorAll('.product-item').forEach(item => {
+    item.addEventListener('click', () => {
+      window.location.href = 'coming-soon.html';
     });
-  }
-
-  // 6. Product Card Quick-Add interaction
-  document.querySelectorAll('.product-card').forEach(card => {
-    card.addEventListener('click', () => {
-      cartCount++;
-      if (cartCountEl) {
-        cartCountEl.textContent = cartCount;
-        cartCountEl.style.transform = 'scale(1.3)';
-        setTimeout(() => {
-          cartCountEl.style.transform = 'scale(1)';
-        }, 200);
-      }
-    });
+    item.style.cursor = 'pointer';
   });
 
   // 7. Country Selector Switcher
