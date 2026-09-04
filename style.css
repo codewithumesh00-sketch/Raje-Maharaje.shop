@@ -2465,9 +2465,10 @@ button {
   .rj-core-content-col {
     padding: 50px 20px;
   }
+  .rj-core-logo-wrap,
   .rj-core-badge-wrap {
-    width: 100px;
-    height: 100px;
+    width: 64px;
+    height: auto;
     margin-bottom: 18px;
   }
   .rj-core-title {

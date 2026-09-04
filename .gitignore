@@ -10,7 +10,7 @@ Thumbs.db
 
 # Temporary backups
 *.bak
-assets/*_backup.mp4
+assets/*_backup.*
 
 # Root development test captures and utility scripts
 /*.png
