@@ -524,7 +524,7 @@ button {
 .hero-desktop-wrapper {
   display: block;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 .hero-video-container {
@@ -590,8 +590,8 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: calc(100vh - 124px);
-  min-height: calc(100dvh - 124px);
+  min-height: calc(90vh - 124px);
+  min-height: calc(90dvh - 124px);
   padding: 20px 0 32px;
   background: radial-gradient(ellipse at 50% 36%, var(--color-hero-plum-glow) 0%, var(--color-hero-plum) 65%, var(--color-hero-plum-deep) 100%);
   text-align: center;
@@ -2320,9 +2320,9 @@ button {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    min-height: 100vh;
-    min-height: 100dvh;
-    padding: 136px 0 36px;
+    min-height: 90vh;
+    min-height: 90dvh;
+    padding: 128px 0 30px;
   }
 
   .products-grid {
